@@ -1,0 +1,56 @@
+
+.aicolumns-wrapper > .aicolumns {
+  display: flex;
+  justify-content: center;
+}
+
+.aicolumns-wrapper > .aicolumns > div {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.aicolumns-wrapper > .aicolumns > div > .aicolumns-img-col {
+  flex: 1;
+}
+
+.aicolumns-wrapper > .aicolumns > div > .aicolumns-img-col img {
+  width: 100%;
+  height: auto;
+}
+
+.aicolumns-wrapper > .aicolumns > div > div:last-child {
+  flex: 1;
+  padding: 15px 20px 15px 20px; /* Further reduce padding to ensure proper spacing */
+  box-sizing: border-box;
+}
+
+.aicolumns-wrapper > .aicolumns h6,
+.aicolumns-wrapper > .aicolumns h4,
+.aicolumns-wrapper > .aicolumns p,
+.aicolumns-wrapper > .aicolumns .button-container {
+  margin: 0 0 5px 0; /* Further adjust margin for consistent spacing */
+}
+
+.aicolumns-wrapper > .aicolumns .button-container {
+  margin-top: 0px; /* Ensure proper separation from the paragraph */
+}
+
+.aicolumns-wrapper > .aicolumns .button {
+  color: red;
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0; /* Remove padding to match original button style */
+}
+
+.aicolumns-wrapper > .aicolumns > div > div:last-child::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: red; /* Adjust color as needed */
+  margin-bottom: 3px; /* Further adjust margin for spacing */
+}

@@ -1,0 +1,68 @@
+
+.aicards-wrapper .aicards {
+    display: flex;
+    flex-direction: row; /* Ensure cards are side by side */
+    justify-content: space-between; /* Distribute cards evenly */
+    gap: 20px; /* Adjust spacing between cards */
+}
+
+.aicards-wrapper .aicards > div {
+    display: flex;
+    flex-direction: row; /* Ensure cards are side by side */
+    width: 100%;
+}
+
+.aicards-wrapper .aicards > div > div {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    width: 100%; /* Ensure full width of the container */
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+    align-items: flex-start; /* Ensure all elements are left-aligned */
+}
+
+.aicards-wrapper .aicards img {
+    width: 100%;
+    height: auto;
+}
+
+.aicards-wrapper .aicards h5 {
+    margin-top: 10px; /* Adjust spacing as needed */
+    font-size: var(--heading-font-size-s); /* Adjust font size as needed */
+    font-weight: bold; /* Make the font weight bolder */
+    text-align: left; /* Ensure text is left aligned */
+    width: 100%; /* Ensure full width */
+}
+
+.aicards-wrapper .aicards .button-container {
+    margin-top: 5px; /* Reduce spacing */
+    display: flex;
+    justify-content: flex-start; /* Left align the buttons */
+    width: 100%; /* Ensure full width */
+}
+
+.aicards-wrapper .aicards .button {
+    color: red; /* Change to red */
+    background: none; /* Remove background */
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+.aicards-wrapper .aicards .button::after {
+    content: ' >';
+    margin-left: 5px; /* Adjust spacing as needed */
+    color: red; /* Ensure the arrow is the same color as the text */
+}
+
+@media (min-width: 900px) {
+    .aicards-wrapper .aicards {
+        align-items: flex-start; /* Align items to the start */
+        flex-direction: row; /* Ensure flex direction is horizontal */
+        gap: 24px; /* Adjust gap as needed */
+    }
+
+    .aicards-wrapper .aicards > div > div {
+        flex: 1;
+        order: unset;
+    }
+}

@@ -1,0 +1,87 @@
+
+.ailist-wrapper .ailist {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ailist-wrapper .ailist > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; /* Ensure elements are centered */
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.ailist-wrapper .ailist > div > div:first-child {
+  flex-grow: 1;
+  max-width: calc(100% - 50px); /* Ensure text block takes more space */
+}
+
+.ailist-wrapper .ailist > div > div:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-width: 20px; /* Ensure space for the arrow */
+}
+
+.ailist-wrapper .ailist > div > div:last-child::before {
+  content: '>';
+  font-size: 16px; /* Reduce font-size for better alignment */
+  color: red;
+  margin-left: 20px; /* Ensure better separation */
+  align-self: center;
+}
+
+.ailist-wrapper .ailist > div > div h3 {
+  margin: 0 0 10px 0;
+  color: black; /* Ensure headline links are black */
+}
+
+.ailist-wrapper .ailist > div > div p {
+  margin: 0 0 10px 0;
+}
+
+.ailist-wrapper .ailist > div > div .button-container a {
+  text-decoration: underline;
+  background: none;
+  color: black; /* Ensure link color is black */
+  padding: 0;
+  border: none;
+  font: inherit;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.ailist-wrapper .ailist > div:first-child {
+  display: block;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.ailist-wrapper #latest-news {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.ailist-wrapper #media-release {
+  font-size: 24px;
+}
+
+@media (min-width: 900px) {
+  .ailist-wrapper .ailist > div {
+    align-items: center; /* Ensure elements are centered */
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .ailist-wrapper .ailist > div > div {
+    flex: 1;
+    order: unset;
+  }
+
+  .ailist-wrapper .ailist > div > div:first-child {
+    max-width: calc(100% - 50px); /* Ensure text block takes more space */
+  }
+}

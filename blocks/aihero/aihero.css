@@ -1,0 +1,87 @@
+
+.aihero-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #f0f0f0; /* Assuming a light background color */
+    background-image: url('./media_19fcceacddf1761a9ba79723ab02cd2011d1a432c.jpeg?width=2000&format=jpeg&optimize=medium');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 0; /* Remove padding */
+    box-sizing: border-box;
+    color: white; /* Ensure text is visible on the background */
+}
+
+.aihero-wrapper > .aihero.block > div {
+    display: flex;
+    flex-direction: column; /* Ensure elements are stacked */
+    width: 100%;
+    height: 100%;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+}
+
+.aihero-wrapper > .aihero.block > div > div {
+    display: flex;
+    flex-direction: row; /* Ensure elements are side by side */
+    flex-wrap: nowrap;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.aihero-wrapper .aihero.block h5 {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 10px 15px;
+    margin: 10px;
+    border-radius: 5px;
+    color: white; /* Ensure text is visible */
+    max-width: 45%; /* Adjust as needed */
+    position: relative;
+    top: 20%;
+}
+
+.aihero-wrapper .aihero.block p {
+    margin: 20px;
+}
+
+.aihero-wrapper .aihero.block img {
+    max-width: 100%;
+    height: auto;
+    display: none; /* Hide individual images as background covers them */
+}
+
+.aihero-wrapper .highlighted-text-box {
+    background-color: red;
+    padding: 15px;
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    color: white;
+    border-radius: 5px;
+}
+
+.aihero-wrapper .circular-statistic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media (min-width: 768px) {
+    .aihero-wrapper > .aihero.block > div {
+        flex-direction: row; /* Ensure elements are side by side on larger screens */
+    }
+}
