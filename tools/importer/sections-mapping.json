@@ -51,8 +51,8 @@
               },
               "x": 0,
               "y": 0,
-              "mapping": "defaultContent",
-              "customBlockName": "aihero"
+              "mapping": "carousel",
+              "customBlockName": "aicarousel"
             },
             {
               "id": "box-id--1102402209",
@@ -206,7 +206,7 @@
               "color": "rgba(0, 0, 255, 1)",
               "width": 1268,
               "height": 489,
-              "xpath": "/html[1]/body[1]/footer[1]",
+              "xpath": "/html[1]/body[1]/footer[1]/div[1]",
               "childrenXpaths": [
                 {
                   "xpath": "/html[1]/body[1]/footer[1]/div[1]",
@@ -225,6 +225,31 @@
               "y": 3524,
               "mapping": "columns",
               "customBlockName": "aifooter"
+            },
+            {
+              "id": "box-id--95313980d8",
+              "color": "rgba(0, 0, 255, 1)",
+              "width": 1268,
+              "height": 489,
+              "xpath": "/html[1]/body[1]/footer[1]/div[2]",
+              "childrenXpaths": [
+                {
+                  "xpath": "/html[1]/body[1]/footer[1]/div[1]",
+                  "xpathWithDetails": "id(\"site-footer\")/div[@class=\"container-fluid\"]"
+                },
+                {
+                  "xpath": "/html[1]/body[1]/footer[1]/div[2]",
+                  "xpathWithDetails": "id(\"site-footer\")/div[@class=\"row terms\"]"
+                }
+              ],
+              "layout": {
+                "numCols": 1,
+                "numRows": 2
+              },
+              "x": 0,
+              "y": 3524,
+              "mapping": "defaultContent",
+              "customBlockName": "aifooterdefault"
             }
           ],
           "settings": {}

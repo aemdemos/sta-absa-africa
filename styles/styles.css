@@ -29,6 +29,7 @@
   --heading-font-size-s: 24px;
   --heading-font-size-xs: 22px;
   --nav-height: 69px;
+  --header-height: var(--nav-height);
 }
 
 /* fallback fonts */
