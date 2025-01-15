@@ -2,7 +2,6 @@
 .ailist-wrapper .ailist {
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 
 .ailist-wrapper .ailist > div {
@@ -11,12 +10,10 @@
   justify-content: space-between;
   align-items: center; /* Ensure elements are centered */
   padding-bottom: 20px;
-  border-bottom: 1px solid #ccc;
 }
 
 .ailist-wrapper .ailist > div > div:first-child {
-  flex-grow: 1;
-  max-width: calc(100% - 50px); /* Ensure text block takes more space */
+    max-width: 100%;
 }
 
 .ailist-wrapper .ailist > div > div:last-child {
@@ -26,12 +23,15 @@
   min-width: 20px; /* Ensure space for the arrow */
 }
 
-.ailist-wrapper .ailist > div > div:last-child::before {
-  content: '>';
-  font-size: 16px; /* Reduce font-size for better alignment */
-  color: red;
-  margin-left: 20px; /* Ensure better separation */
-  align-self: center;
+.ailist-wrapper .ailist h3 a {
+    max-width: 90% !important;
+    color: #2d2323;
+    margin: 0;
+    text-align: left;
+    display: inline-block;
+    line-height: 1.5001875rem;
+    font-size: 13px;
+    font-family: "Adobe Clean Han";
 }
 
 .ailist-wrapper .ailist > div > div h3 {
@@ -40,18 +40,27 @@
 }
 
 .ailist-wrapper .ailist > div > div p {
-  margin: 0 0 10px 0;
+  display: block;
+  line-height: 1.5 !important;
+  color: #666;
+  overflow: hidden;
+  inline-size: 100%;
+  margin-bottom: 0;
+  letter-spacing: 0.33px;
+  font-size: 12px;
+  font-family: "Adobe Clean Han";
+  font-weight: 200;
+  margin-top: 0px;
 }
 
 .ailist-wrapper .ailist > div > div .button-container a {
-  text-decoration: underline;
   background: none;
-  color: black; /* Ensure link color is black */
+  color:  #B50232; /* Ensure link color is black */
   padding: 0;
   border: none;
   font: inherit;
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 22px;
 }
 
 .ailist-wrapper .ailist > div:first-child {
@@ -63,17 +72,20 @@
 .ailist-wrapper #latest-news {
   font-size: 32px;
   margin-bottom: 10px;
+  font-family: "Adobe Clean";
+  font-weight: 400;
 }
 
 .ailist-wrapper #media-release {
-  font-size: 24px;
+    font-size: 28px;
+    font-family: "Adobe Clean";
+    font-weight: 400;
 }
 
 @media (min-width: 900px) {
   .ailist-wrapper .ailist > div {
     align-items: center; /* Ensure elements are centered */
     flex-direction: row;
-    gap: 24px;
   }
 
   .ailist-wrapper .ailist > div > div {
