@@ -92,10 +92,8 @@ h2 {
 
 h5 {
     font-size: 0.9996875rem;
-    line-height: 23.996px;
     line-height: 1.49975rem;
     letter-spacing: 0.33px;
-    font-weight: 100;
     text-align: left;
     font-weight: bold;
     width: 90%;
@@ -107,12 +105,9 @@ h5 {
     margin-top: 3.75rem;
     background-color: #BE0028;
     height: 5.999px;
-    height: 0.3749375rem;
     margin-right: 14.994px;
     margin-right: 0.937125rem;
     content: ' ';
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
     display: inline-flex;
 }
 
@@ -124,9 +119,9 @@ h4 {
   font-size: var(--heading-font-size-m);
 }
 
-h5 {
-  font-size: var(--heading-font-size-s);
-}
+/*h5 {*/
+/*  font-size: var(--heading-font-size-s);*/
+/*}*/
 
 h6 {
   font-size: var(--heading-font-size-xs);
@@ -176,8 +171,10 @@ a.button:any-link, button {
   max-width: 100%;
   margin: 12px 0;
   border: 2px solid transparent;
-  /*border-radius: 2.4em;*/
-  /*padding: 0.5em 1.2em;*/
+
+  /* border-radius: 2.4em; */
+
+  /* padding: 0.5em 1.2em; */
   font-family: var(--body-font-family);
   font-style: normal;
   font-weight: 500;
