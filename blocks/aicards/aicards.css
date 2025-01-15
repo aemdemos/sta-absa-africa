@@ -26,11 +26,12 @@
 }
 
 .aicards-wrapper .aicards h5 {
-    margin-top: 10px; /* Adjust spacing as needed */
-    font-size: var(--heading-font-size-s); /* Adjust font size as needed */
-    font-weight: bold; /* Make the font weight bolder */
-    text-align: left; /* Ensure text is left aligned */
-    width: 100%; /* Ensure full width */
+    font-size: 0.9996875rem;
+    line-height: 23.996px;
+    letter-spacing: 0.33px;
+    font-weight: 100;
+    text-align: left;
+    width: 90%;
 }
 
 .aicards-wrapper .aicards .button-container {
@@ -41,7 +42,7 @@
 }
 
 .aicards-wrapper .aicards .button {
-    color: red; /* Change to red */
+    color: #B50232; /* Change to red */
     background: none; /* Remove background */
     text-decoration: none;
     display: inline-flex;
@@ -49,10 +50,22 @@
 }
 
 .aicards-wrapper .aicards .button::after {
-    content: ' >';
-    margin-left: 5px; /* Adjust spacing as needed */
+    content: '';
+    margin-left: 15px; /* Adjust spacing as needed */
     color: red; /* Ensure the arrow is the same color as the text */
+    display: inline-block;
+    width: 15px; /* Adjust width as needed */
+    height: 15px; /* Adjust height as needed */
+    background: url(../../icons/chevron-right-energy.svg) no-repeat;
 }
+
+.aicards-wrapper .aicards picture {
+    max-width: 100%;
+    display: block;
+    width: 263px;
+    height: auto;
+}
+
 
 @media (min-width: 900px) {
     .aicards-wrapper .aicards {
