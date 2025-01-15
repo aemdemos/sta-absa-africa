@@ -1,4 +1,4 @@
-
+AEM
 .aicards-wrapper .aicards {
     display: flex;
     flex-direction: row; /* Ensure cards are side by side */
@@ -10,6 +10,7 @@
     display: flex;
     flex-direction: row; /* Ensure cards are side by side */
     width: 100%;
+    gap: 20px;
 }
 
 .aicards-wrapper .aicards > div > div {
@@ -18,6 +19,7 @@
     width: 100%; /* Ensure full width of the container */
     box-sizing: border-box; /* Ensure padding and border are included in the width */
     align-items: flex-start; /* Ensure all elements are left-aligned */
+    margin: 0 20px;
 }
 
 .aicards-wrapper .aicards img {

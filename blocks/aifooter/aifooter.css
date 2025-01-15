@@ -1,74 +1,66 @@
 
 .aifooter-wrapper {
-  width: 100%;
   display: flex;
   justify-content: center;
-  background-color: white;
+  padding: 20px;
+  background-color: var(--background-color);
 }
 
 .aifooter {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   max-width: 1200px;
-  padding: 20px;
 }
 
-.aifooter > div:first-child {
+.aifooter > div {
   display: flex;
   flex-direction: row; /* Ensure elements are side by side */
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: nowrap; /* Prevent wrapping */
-  margin-bottom: 40px;
 }
 
-.aifooter > div:first-child > div {
+.aifooter > div > div {
   flex: 1;
   min-width: 300px;
 }
 
-.aifooter > div:first-child > div:first-child {
+.aifooter > div > div:first-child {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  margin-right: 40px; /* Increase space between sections */
 }
 
-.aifooter > div:first-child > div:first-child > .button-container {
+.aifooter > div > div:first-child > p {
+  margin-bottom: 10px; /* Ensure spacing between paragraphs */
+}
+
+.aifooter > div > div:first-child > .button-container {
   margin-top: 10px;
+  align-self: flex-start; /* Ensure the button is aligned below the text */
 }
 
-.aifooter > div:first-child > div:last-child {
+.aifooter > div > div:last-child {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Ensure the heading and icons are in a column */
   justify-content: flex-start;
-  align-items: flex-end;
+  align-items: flex-start; /* Align items to the start */
 }
 
-.aifooter > div:first-child > div:last-child > p:first-child {
+.aifooter > div > div:last-child > p:first-child {
   margin: 0 0 10px 0; /* Add margin to the bottom to separate from icons */
-  text-align: right;
+  text-align: left; /* Align text to the left */
   width: 100%;
 }
 
-.aifooter > div:first-child > div:last-child > p:last-child {
+.aifooter > div > div:last-child > p:last-child {
   margin-bottom: 0;
   display: flex;
   flex-direction: row; /* Ensure social media icons are in a row */
   justify-content: flex-start;
   align-items: center;
-}
-
-.aifooter > div:nth-child(2) {
-  width: 100%;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.aifooter > div:nth-child(2) p {
-  margin: 0;
-}
-
-.aifooter > div:nth-child(2) p a {
-  margin: 0 5px;
 }
 
 .aifooter img {
@@ -78,6 +70,12 @@
   margin: 0 8px; /* Add some space between icons */
 }
 
+.aifooter a {
+  display: inline-block; /* Ensure URLs are displayed inline */
+  margin-right: 10px; /* Add some space between URLs */
+  color: transparent; /* Make URLs transparent to hide them */
+}
+
 .aifooter .button-container .button {
   background-color: red; /* Change button color to red */
   padding: 10px 20px; /* Adjust padding */
@@ -85,16 +83,16 @@
 }
 
 @media (max-width: 768px) {
-  .aifooter > div:first-child {
+  .aifooter {
     flex-direction: column;
   }
 
-  .aifooter > div:first-child > div {
+  .aifooter > div {
     margin-right: 0;
     margin-bottom: 20px;
   }
 
-  .aifooter > div:first-child > div:last-child {
+  .aifooter > div > div:last-child {
     align-items: flex-start;
   }
 }
