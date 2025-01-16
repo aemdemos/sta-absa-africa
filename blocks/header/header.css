@@ -119,14 +119,6 @@ header nav .nav-hamburger {
   visibility: hidden;
 }
 
-/* Hide sub-items in navigation links */
-header nav .nav-sections li:hover ul {
-  display: block;
-  position: absolute; /* Optional: Makes the child menu appear as a dropdown */
-  background-color: white; /* Ensure proper contrast */
-  margin-top: 10px; /* Adjust for spacing */
-  z-index: 10; /* Ensure it's above other elements */
-}
 header nav .nav-sections li ul {
   display: none; /* Initially hidden */
   position: absolute;
@@ -136,12 +128,27 @@ header nav .nav-sections li ul {
   margin: 0;
 }
 
+/* Hide sub-items in navigation links */
 header nav .nav-sections li:hover ul {
   display: block;
-  animation: fadeIn 0.3s ease-in-out; /* Optional animation */
+  position: absolute; /* Optional: Makes the child menu appear as a dropdown */
+  background-color: white; /* Ensure proper contrast */
+  margin-top: 10px; /* Adjust for spacing */
+  z-index: 10; /* Ensure it's above other elements */
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-10px); }
-  to { opacity: 1; transform: translateY(0); }
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+header nav .nav-sections li:hover ul {
+  display: block;
+  animation: fade-in 0.3s ease-in-out; /* Updated animation name */
 }
