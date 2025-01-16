@@ -29,9 +29,10 @@
     font-size: 0.9997rem;
     line-height: 23.996px;
     letter-spacing: 0.33px;
-    font-weight: 100;
     text-align: left;
     width: 90%;
+    font-family: "Adobe Clean Han";
+    font-weight: 500;
 }
 
 .aicards-wrapper .aicards .button-container {
@@ -47,6 +48,15 @@
     text-decoration: none;
     display: inline-flex;
     align-items: center;
+    font-family: "Adobe Clean Han";
+    font-size: 0.8096875rem;
+}
+
+.section #our-voices {
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-family: "Adobe Clean";
+    font-weight: 400;
 }
 
 .aicards-wrapper .aicards .button::after {
