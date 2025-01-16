@@ -12,6 +12,12 @@
   padding-bottom: 20px;
 }
 
+.ailist-wrapper .ailist > div:first-child {
+  display: block;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
 .ailist-wrapper .ailist > div > div:first-child {
     max-width: 100%;
 }
@@ -29,13 +35,13 @@
     margin: 0;
     text-align: left;
     display: inline-block;
-    line-height: 1.5001875rem;
+    line-height: 1.5002rem;
     font-size: 13px;
-    font-family: "Adobe Clean Han";
+    font-family: var(--body-font-family);
 }
 
 .ailist-wrapper .ailist > div > div h3 {
-  margin: 0 0 10px 0;
+  margin: 0 0 10px;
   color: black; /* Ensure headline links are black */
 }
 
@@ -48,9 +54,9 @@
   margin-bottom: 0;
   letter-spacing: 0.33px;
   font-size: 12px;
-  font-family: "Adobe Clean Han";
+  font-family: var(--body-font-family);
   font-weight: 200;
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 .ailist-wrapper .ailist > div > div .button-container a {
@@ -63,26 +69,20 @@
   margin-top: 22px;
 }
 
-.ailist-wrapper .ailist > div:first-child {
-  display: block;
-  border-bottom: none;
-  padding-bottom: 0;
-}
-
 .ailist-wrapper #latest-news {
   font-size: 32px;
   margin-bottom: 10px;
-  font-family: "Adobe Clean";
+  font-family: var(--body-font-family);
   font-weight: 400;
 }
 
 .ailist-wrapper #media-release {
     font-size: 28px;
-    font-family: "Adobe Clean";
+    font-family: var(--body-font-family);
     font-weight: 400;
 }
 
-@media (min-width: 900px) {
+@media (width >= 900px) {
   .ailist-wrapper .ailist > div {
     align-items: center; /* Ensure elements are centered */
     flex-direction: row;

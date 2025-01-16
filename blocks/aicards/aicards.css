@@ -26,7 +26,7 @@
 }
 
 .aicards-wrapper .aicards h5 {
-    font-size: 0.9996875rem;
+    font-size: 0.9997rem;
     line-height: 23.996px;
     letter-spacing: 0.33px;
     font-weight: 100;
@@ -56,7 +56,7 @@
     display: inline-block;
     width: 15px; /* Adjust width as needed */
     height: 15px; /* Adjust height as needed */
-    background: url(../../icons/chevron-right-energy.svg) no-repeat;
+    background: url("../../icons/chevron-right-energy.svg") no-repeat;
 }
 
 .aicards-wrapper .aicards picture {
@@ -67,7 +67,7 @@
 }
 
 
-@media (min-width: 900px) {
+@media (width >= 900px) {
     .aicards-wrapper .aicards {
         align-items: flex-start; /* Align items to the start */
         flex-direction: row; /* Ensure flex direction is horizontal */
