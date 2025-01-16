@@ -4,6 +4,7 @@ import { loadFragment } from '../fragment/fragment.js';
 // media query match that indicates mobile/tablet width
 const isDesktop = window.matchMedia('(min-width: 900px)');
 
+
 function closeOnEscape(e) {
   if (e.code === 'Escape') {
     const nav = document.getElementById('nav');
@@ -138,14 +139,12 @@ export default async function decorate(block) {
       if (navSection.querySelector('ul')) {
         navSection.classList.add('nav-drop');
         navSection.setAttribute('aria-expanded', 'false'); // Set to collapsed by default
-    
         navSection.addEventListener('mouseover', () => {
           if (isDesktop.matches) {
             toggleAllNavSections(navSections, false);
             navSection.setAttribute('aria-expanded', 'true'); // Open on hover
           }
         });
-    
         navSection.addEventListener('mouseout', () => {
           if (isDesktop.matches) {
             navSection.setAttribute('aria-expanded', 'false'); // Close on mouse out
