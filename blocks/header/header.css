@@ -123,18 +123,19 @@ header nav .nav-sections li ul {
   display: none; /* Initially hidden */
   position: absolute;
   background-color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional styling */
+  box-shadow: 0 4px 8px rgb(0, 0, 0, 0.1); /* Optional styling */
   padding: 10px;
   margin: 0;
 }
 
 /* Hide sub-items in navigation links */
 header nav .nav-sections li:hover ul {
-  display: block;
-  position: absolute; /* Optional: Makes the child menu appear as a dropdown */
+  display: block; /* Merge duplicate properties */
+  position: absolute; /* Optional: Dropdown appearance */
   background-color: white; /* Ensure proper contrast */
-  margin-top: 10px; /* Adjust for spacing */
+  margin-top: 10px; /* Adjust spacing */
   z-index: 10; /* Ensure it's above other elements */
+  animation: fade-in 0.3s ease-in-out; /* Optional animation */
 }
 
 @keyframes fade-in {
@@ -146,9 +147,4 @@ header nav .nav-sections li:hover ul {
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-header nav .nav-sections li:hover ul {
-  display: block;
-  animation: fade-in 0.3s ease-in-out; /* Updated animation name */
 }
