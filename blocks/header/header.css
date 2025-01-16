@@ -119,7 +119,33 @@ header nav .nav-hamburger {
   visibility: hidden;
 }
 
-/* Hide sub-items in navigation links */
 header nav .nav-sections li ul {
-  display: none;
+  display: none; /* Initially hidden */
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 4px 8px rgb(0, 0, 0 / 10%); /* Optional styling */
+  padding: 10px;
+  margin: 0;
+}
+
+/* Hide sub-items in navigation links */
+header nav .nav-sections li:hover ul {
+  display: block; /* Merge duplicate properties */
+  position: absolute; /* Optional: Dropdown appearance */
+  background-color: white; /* Ensure proper contrast */
+  margin-top: 10px; /* Adjust spacing */
+  z-index: 10; /* Ensure it's above other elements */
+  animation: fade-in 0.3s ease-in-out; /* Optional animation */
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
