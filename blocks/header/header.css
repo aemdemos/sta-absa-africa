@@ -120,6 +120,28 @@ header nav .nav-hamburger {
 }
 
 /* Hide sub-items in navigation links */
+header nav .nav-sections li:hover ul {
+  display: block;
+  position: absolute; /* Optional: Makes the child menu appear as a dropdown */
+  background-color: white; /* Ensure proper contrast */
+  margin-top: 10px; /* Adjust for spacing */
+  z-index: 10; /* Ensure it's above other elements */
+}
 header nav .nav-sections li ul {
-  display: none;
+  display: none; /* Initially hidden */
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional styling */
+  padding: 10px;
+  margin: 0;
+}
+
+header nav .nav-sections li:hover ul {
+  display: block;
+  animation: fadeIn 0.3s ease-in-out; /* Optional animation */
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
 }

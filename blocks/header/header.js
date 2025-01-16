@@ -145,7 +145,20 @@ export default async function decorate(block) {
       });
     });
   }
-
+  navSections.querySelectorAll('.nav-drop').forEach((navSection) => {
+    navSection.addEventListener('mouseenter', () => {
+      if (isDesktop.matches) {
+        toggleAllNavSections(navSections);
+        navSection.setAttribute('aria-expanded', 'true');
+      }
+    });
+  
+    navSection.addEventListener('mouseleave', () => {
+      if (isDesktop.matches) {
+        navSection.setAttribute('aria-expanded', 'false');
+      }
+    });
+  });
   // hamburger for mobile
   const hamburger = document.createElement('div');
   hamburger.classList.add('nav-hamburger');
