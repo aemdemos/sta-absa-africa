@@ -47,15 +47,47 @@
 
 /* fallback fonts */
 @font-face {
-  src: local('Arial');
-  font-family:"Sourcesanspro-light Fallback";
-  font-style:normal;
-  font-weight:normal;
-  src:local("Arial");
-  ascent-override:103.48%;
-  descent-override:33.69%;
-  line-gap-override:0.00%;
-  size-adjust:90.74%;
+  font-family: "Sourcesanspro-light Fallback";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Arial");
+  ascent-override: 103.48%;
+  descent-override: 33.69%;
+  line-gap-override: 0.00%;
+  size-adjust: 90.74%;
+}
+
+@font-face {
+  font-family: "Sourcesanspro-Regular Fallback";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Arial");
+  ascent-override: 100.97%;
+  descent-override: 36.35%;
+  line-gap-override: 0.00%;
+  size-adjust: 94.30%;
+}
+
+@font-face {
+  font-family: "Sourcesanspro-Extralight Fallback";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Arial");
+  ascent-override: 104.50%;
+  descent-override: 32.72%;
+  line-gap-override: 0.00%;
+  size-adjust: 89.39%;
+}
+
+@font-face {
+  font-family: "Sourcesanspro-SemiBold Fallback";
+  font-style: normal;
+  font-weight: bold;
+  src: local("Arial Bold");
+  ascent-override: 109.21%;
+  descent-override: 30.30%;
+  line-gap-override: 0.00%;
+  size-adjust: 90.10%;
 }
 
 body {
@@ -119,7 +151,7 @@ h5 {
     height: 5.999px;
     margin-right: 14.994px;
     margin-right: 0.9371rem;
-    content: ' ';
+    content: " ";
     display: inline-flex;
 }
 

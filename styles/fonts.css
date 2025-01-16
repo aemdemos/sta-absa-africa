@@ -1,9 +1,35 @@
-
 @font-face {
   font-family: Sourcesanspro-light;
-  src: url('../fonts/sourcesanspro-light-normal-normal.woff2') format('woff2');
+  src: url("../fonts/sourcesanspro-light-normal-normal.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+  font-display: auto;
+  unicode-range: U+0-10FFFF;
+}
+
+@font-face {
+  font-family: Sourcesanspro-Regular;
+  src: url("../fonts/sourcesanspro-regular-normal-normal.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+  unicode-range: U+0-10FFFF;
+}
+
+@font-face {
+  font-family: Sourcesanspro-Extralight;
+  src: url("../fonts/sourcesanspro-extralight-normal-normal.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+  unicode-range: U+0-10FFFF;
+}
+
+@font-face {
+  font-family: Sourcesanspro-SemiBold;
+  src: url("../fonts/sourcesanspro-semibold-bold-normal.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: auto;
   unicode-range: U+0-10FFFF;
 }
