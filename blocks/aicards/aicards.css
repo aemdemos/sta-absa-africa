@@ -31,7 +31,7 @@
     letter-spacing: 0.33px;
     text-align: left;
     width: 90%;
-    font-family: "Adobe Clean Han";
+    font-family: var(--body-font-family);
     font-weight: 500;
 }
 
@@ -48,14 +48,14 @@
     text-decoration: none;
     display: inline-flex;
     align-items: center;
-    font-family: "Adobe Clean Han";
-    font-size: 0.8096875rem;
+    font-family: var(--body-font-family);
+    font-size: 0.8097rem;
 }
 
 .section #our-voices {
     font-size: 32px;
     margin-bottom: 10px;
-    font-family: "Adobe Clean";
+    font-family: var(--body-font-family);
     font-weight: 400;
 }
 
