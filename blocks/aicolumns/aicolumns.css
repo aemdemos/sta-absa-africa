@@ -1,4 +1,9 @@
 
+.aicolumns-wrapper {
+  padding: unset !important;
+  max-width: unset !important;
+}
+
 .aicolumns-wrapper > .aicolumns {
   display: flex;
   justify-content: center;
@@ -41,24 +46,25 @@
     margin-top: 1.9rem;
     margin-left: 3.75rem;
     color: #4a4a4a;
-    font-family: --var(--body-font-family);
-    font-size: 1.25rem;
+    font-family: var(--body-font-family);
+    font-size: 1.05rem;
 }
 
 .aicolumns-wrapper > .aicolumns h4{
     margin-left:82px;
     text-align: left;
     letter-spacing: 1px;
-    font-family: inherit;
-    font-size: 2.3752rem;
+    font-family: var(--title-font-family);
+    font-size: 2.0752rem;
     font-weight: 600;
     line-height: 1.21;
     color: #4a4a4a;
 }
 
 .aicolumns-wrapper > .aicolumns p{
-margin-left:82px;
-    letter-spacing: 0.33px;
+  margin-left:82px;
+  font-size: 1rem;
+  max-width: 70%;
 }
 
 .aicolumns-wrapper > .aicolumns .button-container {

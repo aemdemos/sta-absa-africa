@@ -6,6 +6,8 @@
     overflow: hidden;
     display: flex;
     flex-direction: column; /* Stack elements vertically */
+    padding: unset !important; /* Remove padding */
+    max-width: unset !important;
 }
 
 .aicarousel-wrapper > .aicarousel.block {
