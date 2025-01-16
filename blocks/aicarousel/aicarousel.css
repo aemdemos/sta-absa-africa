@@ -25,6 +25,10 @@
     flex-direction: row; /* Ensure slides are aligned side by side */
 }
 
+.aicarousel-slides {
+    margin-top: 0;
+}
+
 .aicarousel-wrapper .aicarousel-slides {
     display: flex;
     flex-direction: row; /* Ensure slides are aligned side by side */

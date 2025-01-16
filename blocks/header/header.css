@@ -13,7 +13,6 @@
   z-index: 2;
   background-color: white; /* Ensure the background is solid */
   width: 100%;
-  justify-content: center;
 }
 
 header nav {
@@ -32,15 +31,14 @@ header nav .nav-brand {
 }
 
 header nav .nav-brand img {
-  width: 32px; /* Adjust logo size */
-  height: auto;
+  width: 58px; /* Adjust logo size */
+  height: 100%;
   object-fit: contain;
 }
 
 header nav .nav-sections {
   display: flex;
   order: 2;
-  justify-content: space-around; /* Distribute space evenly */
   align-items: center;
   flex: 1;
   margin-left: 20px; /* Add margin to separate from the logo */
@@ -143,7 +141,7 @@ header nav .nav-sections li:hover ul {
     opacity: 0;
     transform: translateY(-10px);
   }
-  
+
   to {
     opacity: 1;
     transform: translateY(0);
