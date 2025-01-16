@@ -135,14 +135,23 @@ export default async function decorate(block) {
   const navSections = nav.querySelector('.nav-sections');
   if (navSections) {
     navSections.querySelectorAll(':scope .default-content-wrapper > ul > li').forEach((navSection) => {
-      if (navSection.querySelector('ul')) navSection.classList.add('nav-drop');
-      navSection.addEventListener('click', () => {
-        if (isDesktop.matches) {
-          const expanded = navSection.getAttribute('aria-expanded') === 'true';
-          toggleAllNavSections(navSections);
-          navSection.setAttribute('aria-expanded', expanded ? 'false' : 'true');
-        }
-      });
+      if (navSection.querySelector('ul')) {
+        navSection.classList.add('nav-drop');
+        navSection.setAttribute('aria-expanded', 'false'); // Set to collapsed by default
+    
+        navSection.addEventListener('mouseover', () => {
+          if (isDesktop.matches) {
+            toggleAllNavSections(navSections, false);
+            navSection.setAttribute('aria-expanded', 'true'); // Open on hover
+          }
+        });
+    
+        navSection.addEventListener('mouseout', () => {
+          if (isDesktop.matches) {
+            navSection.setAttribute('aria-expanded', 'false'); // Close on mouse out
+          }
+        });
+      }
     });
   }
 
