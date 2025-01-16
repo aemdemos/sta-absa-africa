@@ -152,7 +152,6 @@ export default async function decorate(block) {
         navSection.setAttribute('aria-expanded', 'true');
       }
     });
-  
     navSection.addEventListener('mouseleave', () => {
       if (isDesktop.matches) {
         navSection.setAttribute('aria-expanded', 'false');
