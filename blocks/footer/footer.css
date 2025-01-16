@@ -10,7 +10,7 @@ footer .footer > div {
 
 footer .footer p {
     margin: 0;
-    font-family: "Adobe Clean Han";
+    font-family: var(--body-font-family);
     font-size: 0.775rem;
     font-weight: 400;
 }

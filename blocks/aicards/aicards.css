@@ -26,12 +26,12 @@
 }
 
 .aicards-wrapper .aicards h5 {
-    font-size: 0.8096875rem;
+    font-size: 0.9997rem;
     line-height: 23.996px;
     letter-spacing: 0.33px;
     text-align: left;
     width: 90%;
-    font-family: "Adobe Clean Han";
+    font-family: var(--body-font-family);
     font-weight: 500;
 }
 
@@ -48,14 +48,14 @@
     text-decoration: none;
     display: inline-flex;
     align-items: center;
-    font-family: "Adobe Clean Han";
-    font-size: 0.8096875rem;
+    font-family: var(--body-font-family);
+    font-size: 0.8097rem;
 }
 
 .section #our-voices {
     font-size: 32px;
     margin-bottom: 10px;
-    font-family: "Adobe Clean";
+    font-family: var(--body-font-family);
     font-weight: 400;
 }
 
@@ -66,7 +66,7 @@
     display: inline-block;
     width: 15px; /* Adjust width as needed */
     height: 15px; /* Adjust height as needed */
-    background: url(../../icons/chevron-right-energy.svg) no-repeat;
+    background: url('../../icons/chevron-right-energy.svg') no-repeat;
 }
 
 .aicards-wrapper .aicards picture {
@@ -77,7 +77,7 @@
 }
 
 
-@media (min-width: 900px) {
+@media (width >= 900px) {
     .aicards-wrapper .aicards {
         align-items: flex-start; /* Align items to the start */
         flex-direction: row; /* Ensure flex direction is horizontal */

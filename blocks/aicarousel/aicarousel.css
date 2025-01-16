@@ -59,7 +59,7 @@
     position: absolute;
     bottom: 40px; /* Adjust padding from bottom */
     right: 0; /* Adjust padding from right */
-    background-color: rgba(255, 0, 0, 0.8); /* Semi-transparent red */
+    background-color: rgb(255 0 0 / 80%); /* Semi-transparent red */
     color: white;
     padding: 20px 30px; /* Adjust padding */
     z-index: 2;
@@ -108,16 +108,16 @@
     transition: background-color 0.2s;
 }
 
+.aicarousel-wrapper > .aicarousel.block > .aicarousel-slide-indicator button:focus-visible,
+.aicarousel-wrapper > .aicarousel.block > .aicarousel-slides-container > .aicarousel-slide-indicators > .aicarousel-slide-indicator button:hover{
+    background-color: #ccc; /* Inactive indicator color */
+}
+
 .aicarousel-wrapper > .aicarousel.block > .aicarousel-slides-container > .aicarousel-slide-indicators > .aicarousel-slide-indicator button:disabled {
     background-color: #000; /* Active indicator color */
 }
 
-.aicarousel-wrapper > .aicarousel.block > .aicarousel-slides-container > .aicarousel-slide-indicators > .aicarousel-slide-indicator button:hover,
-.aicarousel-wrapper > .aicarousel.block > .aicarousel-slide-indicator button:focus-visible {
-    background-color: #ccc; /* Inactive indicator color */
-}
-
-@media (min-width: 600px) {
+@media (width >= 600px) {
     .aicarousel-wrapper > .aicarousel.block > .aicarousel-slides-container > .aicarousel-slides > .aicarousel-slide > .aicarousel-slide-content {
         margin: 0;
         width: auto;

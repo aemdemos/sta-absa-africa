@@ -21,6 +21,20 @@
   margin-bottom: 40px;
 }
 
+.aifooterdefault-wrapper a:any-link {
+    color: #B50232 !important;
+}
+
+.aifooter > div:nth-child(2) p a {
+  margin: 0 5px;
+}
+
+.aifooter > div:nth-child(2) {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 .aifooter > div:first-child > div {
   flex: 1;
   min-width: 300px;
@@ -29,7 +43,7 @@
 .aifooter #contact-us {
     font-size: 1rem;
     letter-spacing: 0.56px;
-    font-family: "Adobe Clean Han";
+    font-family: var(--body-font-family);
     font-weight: 400;
     margin-bottom: 0 !important;
 }
@@ -46,6 +60,10 @@
   justify-content: flex-start;
 }
 
+.aifooter > div:nth-child(2) p {
+    margin-top: 30px;
+}
+
 .aifooter > div:first-child > div:last-child > p:first-child {
   margin: 0 0 10px; /* Add margin to the bottom to separate from icons */
   text-align: right;
@@ -60,28 +78,10 @@
   align-items: center;
 }
 
-.aifooter > div:nth-child(2) {
-  width: 100%;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.aifooter > div:nth-child(2) p {
-    margin-top: 30px;
-}
-
-.aifooter > div:nth-child(2) p a {
-  /* margin: 0 5px; */
-}
-
 .aifooter img {
   width: auto;
   max-width: 24px; /* Adjust the width of the icons */
   height: auto;
-}
-
-.aifooterdefault-wrapper a:any-link {
-    color: #B50232 !important;
 }
 
 @media (width <= 768px) {
