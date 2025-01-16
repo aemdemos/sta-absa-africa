@@ -119,6 +119,10 @@
     background-color: #000; /* Active indicator color */
 }
 
+.aicarousel-slides {
+  margin-top: 0;
+}
+
 @media (width >= 600px) {
     .aicarousel-wrapper > .aicarousel.block > .aicarousel-slides-container > .aicarousel-slides > .aicarousel-slide > .aicarousel-slide-content {
         margin: 0;
