@@ -15,4 +15,21 @@ export default function decorate(block) {
       }
     });
   });
+
+  [...block.children].forEach((row) => {
+    [...row.children].forEach((col) => {
+      const pics = col.querySelectorAll('picture');
+      if (pics) {
+        [...pics].forEach((pic) => {
+          const nextsibling = pic.nextElementSibling;
+          nextsibling.childNodes.forEach((node) => {
+            if (node.nodeType === Node.TEXT_NODE) {
+              node.remove(); // Remove text nodes
+            }
+          });
+          nextsibling.prepend(pic);
+        });
+      }
+    });
+  });
 }

@@ -1,5 +1,4 @@
 footer {
-  background-color: var(--light-color);
   font-size: var(--body-font-size-xs);
 }
 
@@ -10,7 +9,31 @@ footer .footer > div {
 }
 
 footer .footer p {
-  margin: 0;
+    margin: 0;
+    font-family: "Adobe Clean Han";
+    font-size: 0.775rem;
+    font-weight: 400;
+}
+
+footer::after {
+    content: "";
+    width: 100vw;
+    height: 1.2vw;
+    position: relative;
+    background: url("../../icons/footer-bar.svg") no-repeat;
+    background-size: cover;
+    display: block;
+}
+
+footer .aifooter .button-container a {
+    background-color: white;
+    color: #B50232;
+    padding: 0;
+    border: none;
+    font: inherit;
+    font-size: 0.775rem;
+    display: inline-block;
+    margin-top: 10px;
 }
 
 @media (width >= 900px) {
