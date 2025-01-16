@@ -9,21 +9,43 @@
 .aifooter {
   width: 100%;
   max-width: 1200px;
-  padding: 20px;
+    display: flex;
+
 }
 
 .aifooter > div:first-child {
   display: flex;
-  flex-direction: row; /* Ensure elements are side by side */
+  flex-flow: row nowrap; /* Ensure elements are side by side */
   justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: nowrap; /* Prevent wrapping */
+  align-items: flex-start; /* Prevent wrapping */
   margin-bottom: 40px;
+}
+
+.aifooterdefault-wrapper a:any-link {
+    color: #B50232 !important;
+}
+
+.aifooter > div:nth-child(2) p a {
+  margin: 0 5px;
+}
+
+.aifooter > div:nth-child(2) {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .aifooter > div:first-child > div {
   flex: 1;
   min-width: 300px;
+}
+
+.aifooter #contact-us {
+    font-size: 1rem;
+    letter-spacing: 0.56px;
+    font-family: var(--body-font-family);
+    font-weight: 400;
+    margin-bottom: 0 !important;
 }
 
 .aifooter > div:first-child > div:first-child {
@@ -32,19 +54,18 @@
   justify-content: flex-start;
 }
 
-.aifooter > div:first-child > div:first-child > .button-container {
-  margin-top: 10px;
-}
-
 .aifooter > div:first-child > div:last-child {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-end;
+}
+
+.aifooter > div:nth-child(2) p {
+    margin-top: 30px;
 }
 
 .aifooter > div:first-child > div:last-child > p:first-child {
-  margin: 0 0 10px 0; /* Add margin to the bottom to separate from icons */
+  margin: 0 0 10px; /* Add margin to the bottom to separate from icons */
   text-align: right;
   width: 100%;
 }
@@ -57,34 +78,13 @@
   align-items: center;
 }
 
-.aifooter > div:nth-child(2) {
-  width: 100%;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.aifooter > div:nth-child(2) p {
-  margin: 0;
-}
-
-.aifooter > div:nth-child(2) p a {
-  margin: 0 5px;
-}
-
 .aifooter img {
   width: auto;
   max-width: 24px; /* Adjust the width of the icons */
   height: auto;
-  margin: 0 8px; /* Add some space between icons */
 }
 
-.aifooter .button-container .button {
-  background-color: red; /* Change button color to red */
-  padding: 10px 20px; /* Adjust padding */
-  border-radius: 25px; /* Adjust border radius */
-}
-
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .aifooter > div:first-child {
     flex-direction: column;
   }

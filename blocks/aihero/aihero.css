@@ -28,15 +28,14 @@
 
 .aihero-wrapper > .aihero.block > div > div {
     display: flex;
-    flex-direction: row; /* Ensure elements are side by side */
-    flex-wrap: nowrap;
+    flex-flow: row nowrap; /* Ensure elements are side by side */
     width: 100%;
     align-items: center;
     justify-content: space-between;
 }
 
 .aihero-wrapper .aihero.block h5 {
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    background-color: rgb(0 0 0 / 70%); /* Semi-transparent background */
     padding: 10px 15px;
     margin: 10px;
     border-radius: 5px;
@@ -80,7 +79,7 @@
     transform: translateY(-50%);
 }
 
-@media (min-width: 768px) {
+@media (width >= 768px) {
     .aihero-wrapper > .aihero.block > div {
         flex-direction: row; /* Ensure elements are side by side on larger screens */
     }

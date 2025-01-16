@@ -26,12 +26,13 @@
 }
 
 .aicards-wrapper .aicards h5 {
-    font-size: 0.9996875rem;
+    font-size: 0.9997rem;
     line-height: 23.996px;
     letter-spacing: 0.33px;
-    font-weight: 100;
     text-align: left;
     width: 90%;
+    font-family: var(--body-font-family);
+    font-weight: 500;
 }
 
 .aicards-wrapper .aicards .button-container {
@@ -47,6 +48,15 @@
     text-decoration: none;
     display: inline-flex;
     align-items: center;
+    font-family: var(--body-font-family);
+    font-size: 0.8097rem;
+}
+
+.section #our-voices {
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-family: var(--body-font-family);
+    font-weight: 400;
 }
 
 .aicards-wrapper .aicards .button::after {
@@ -56,7 +66,7 @@
     display: inline-block;
     width: 15px; /* Adjust width as needed */
     height: 15px; /* Adjust height as needed */
-    background: url(../../icons/chevron-right-energy.svg) no-repeat;
+    background: url('../../icons/chevron-right-energy.svg') no-repeat;
 }
 
 .aicards-wrapper .aicards picture {
@@ -67,7 +77,7 @@
 }
 
 
-@media (min-width: 900px) {
+@media (width >= 900px) {
     .aicards-wrapper .aicards {
         align-items: flex-start; /* Align items to the start */
         flex-direction: row; /* Ensure flex direction is horizontal */

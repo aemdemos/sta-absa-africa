@@ -9,7 +9,10 @@
   flex-direction: row;
   align-items: flex-start;
   gap: 24px;
+    margin-top:80px;
 }
+
+
 
 .aicolumns-wrapper > .aicolumns > div > .aicolumns-img-col {
   flex: 1;
@@ -22,23 +25,50 @@
 
 .aicolumns-wrapper > .aicolumns > div > div:last-child {
   flex: 1;
-  padding: 15px 20px 15px 20px; /* Further reduce padding to ensure proper spacing */
+  padding: 15px 20px; /* Further reduce padding to ensure proper spacing */
   box-sizing: border-box;
 }
 
-.aicolumns-wrapper > .aicolumns h6,
-.aicolumns-wrapper > .aicolumns h4,
-.aicolumns-wrapper > .aicolumns p,
-.aicolumns-wrapper > .aicolumns .button-container {
-  margin: 0 0 5px 0; /* Further adjust margin for consistent spacing */
+.aicolumns-wrapper > .aicolumns h6{
+    text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    text-align: left;
+    box-sizing: border-box;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    margin-bottom: 0.375rem;
+    margin-top: 1.9rem;
+    margin-left: 3.75rem;
+    color: #4a4a4a;
+    font-family: --var(--body-font-family);
+    font-size: 1.25rem;
+}
+
+.aicolumns-wrapper > .aicolumns h4{
+    margin-left:82px;
+    text-align: left;
+    letter-spacing: 1px;
+    font-family: inherit;
+    font-size: 2.3752rem;
+    font-weight: 600;
+    line-height: 1.21;
+    color: #4a4a4a;
+}
+
+.aicolumns-wrapper > .aicolumns p{
+margin-left:82px;
+    letter-spacing: 0.33px;
 }
 
 .aicolumns-wrapper > .aicolumns .button-container {
-  margin-top: 0px; /* Ensure proper separation from the paragraph */
+  margin: 0 0 5px; /* Further adjust margin for consistent spacing */
+  margin-left:82px;
+  margin-top: 0; /* Ensure proper separation from the paragraph */
 }
 
 .aicolumns-wrapper > .aicolumns .button {
-  color: red;
+  color:#B50232;
   background-color: transparent;
   border: none;
   text-decoration: none;
@@ -47,10 +77,13 @@
 }
 
 .aicolumns-wrapper > .aicolumns > div > div:last-child::before {
-  content: "";
-  display: block;
-  width: 50px;
-  height: 2px;
-  background-color: red; /* Adjust color as needed */
-  margin-bottom: 3px; /* Further adjust margin for spacing */
+    content: "";
+    display: block;
+    position: relative;
+    margin-left:-7.8%;
+    width: 54px;
+    height:6px;
+    top:44px;
+    background-color: red; /* Adjust color as needed */
+    margin-bottom: 3px; /* Further adjust margin for spacing */
 }
