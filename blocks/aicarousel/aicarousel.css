@@ -1,0 +1,129 @@
+
+.aicarousel-wrapper {
+    width: 100%;
+    height: 80vh; /* Adjust height to cover a significant portion of the viewport */
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+}
+
+.aicarousel-wrapper > .aicarousel.block {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row; /* Ensure slides are aligned side by side */
+}
+
+.aicarousel-wrapper > .aicarousel.block > .aicarousel-slides-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row; /* Ensure slides are aligned side by side */
+}
+
+.aicarousel-wrapper .aicarousel-slides {
+    display: flex;
+    flex-direction: row; /* Ensure slides are aligned side by side */
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+}
+
+.aicarousel-wrapper .aicarousel-slide {
+    position: relative;
+    flex: 0 0 100%; /* Each slide takes full width */
+}
+
+.aicarousel-wrapper  .aicarousel-slide-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-size: cover; /* Ensure the image covers the entire block */
+    background-position: center;
+}
+
+.aicarousel-wrapper  .aicarousel-slide-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire block */
+    display: block; /* Show the image */
+}
+
+.aicarousel-wrapper  .aicarousel-slide-content {
+    position: absolute;
+    bottom: 40px; /* Adjust padding from bottom */
+    right: 0; /* Adjust padding from right */
+    background-color: rgba(255, 0, 0, 0.8); /* Semi-transparent red */
+    color: white;
+    padding: 20px 30px; /* Adjust padding */
+    z-index: 2;
+    text-align: left; /* Ensure left alignment of text */
+    max-width: 40%; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.aicarousel-wrapper > .aicarousel.block > .aicarousel-slides-container > .aicarousel-slides > .aicarousel-slide-content h5,
+.aicarousel-wrapper > .aicarousel.block > .aicarousel-slides-container > .aicarousel-slides > .aicarousel-slide-content p {
+    margin: 0; /* Ensure no margin around heading */
+    flex: 1;
+}
+
+.aicarousel-wrapper > .aicarousel.block > .aicarousel-slides-container > .aicarousel-slides > .aicarousel-slide-content a {
+    color: white; /* Ensure the text link is visible */
+    text-decoration: underline; /* Underline the link */
+    margin-left: 10px; /* Add space between text and link */
+}
+
+/* No Navigation Buttons Detected */
+.aicarousel-wrapper > .aicarousel.block > .aicarousel-slides-container > .aicarousel-navigation-buttons {
+    display: none;
+}
+
+/* Page Indicators Detected */
+.aicarousel-wrapper .aicarousel-slide-indicators {
+    position: absolute;
+    z-index: 1;
+    right: 80px;
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%);
+    list-style: none;
+}
+
+.aicarousel-wrapper .aicarousel-slide-indicator button {
+    width: 12px; /* Adjust size */
+    height: 12px; /* Adjust size */
+    margin: 4px 0; /* Adjust spacing */
+    padding: 0;
+    border-radius: 50%;
+    background-color: #ccc; /* Inactive indicator color */
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.aicarousel-wrapper > .aicarousel.block > .aicarousel-slides-container > .aicarousel-slide-indicators > .aicarousel-slide-indicator button:disabled {
+    background-color: #000; /* Active indicator color */
+}
+
+.aicarousel-wrapper > .aicarousel.block > .aicarousel-slides-container > .aicarousel-slide-indicators > .aicarousel-slide-indicator button:hover,
+.aicarousel-wrapper > .aicarousel.block > .aicarousel-slide-indicator button:focus-visible {
+    background-color: #ccc; /* Inactive indicator color */
+}
+
+@media (min-width: 600px) {
+    .aicarousel-wrapper > .aicarousel.block > .aicarousel-slides-container > .aicarousel-slides > .aicarousel-slide > .aicarousel-slide-content {
+        margin: 0;
+        width: auto;
+    }
+
+    .aicarousel-wrapper > .aicarousel.block > .aicarousel-slides-container > .aicarousel-slides > .aicarousel-slide-content[data-align='justify'] {
+        width: auto;
+    }
+}
