@@ -9,10 +9,14 @@ footer .footer > div {
 }
 
 footer .footer p {
-    margin: 0;
-    font-family: var(--body-font-family);
-    font-size: 0.775rem;
-    font-weight: 400;
+  margin: 0;
+  font-family: var(--body-font-family);
+  font-size: 0.775rem;
+  font-weight: 400;
+}
+
+footer .aifooterdefault p {
+  font-family: var(--footer-font-family);
 }
 
 footer::after {
@@ -31,7 +35,7 @@ footer .aifooter .button-container a {
     padding: 0;
     border: none;
     font: inherit;
-    font-size: 0.775rem;
+    font-size: 0.875rem;
     display: inline-block;
     margin-top: 10px;
 }

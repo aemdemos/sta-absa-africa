@@ -20,6 +20,8 @@
   --body-font-family: "Sourcesanspro-Regular" , arial, sans-serif;
   --heading-font-family: "Sourcesanspro-Regular", arial, sans-serif;
   --title-font-family: "Sourcesanspro-SemiBold", arial, sans-serif;
+  --para-font-family: "Sourcesanspro-light", arial, sans-serif;
+  --footer-font-family: "Sourcesanspro-Extralight", arial, sans-serif;
   --body-font-size-m: 22px;
   --body-font-size-s: 19px;
   --body-font-size-xs: 17px;
@@ -144,7 +146,7 @@ h5 {
     width: 90%;
 }
 
-.aicolumns-wrapper::after, .aicards-wrapper::after {
+main .default-content-wrapper::before, .aicards-wrapper::after {
     width: 50%;
     margin-left: -52%;
     margin-top: 3.75rem;
