@@ -63,17 +63,38 @@
 
 .aicarousel-wrapper  .aicarousel-slide-content {
     position: absolute;
-    bottom: 40px; /* Adjust padding from bottom */
+    bottom: 120px; /* Adjust padding from bottom */
     right: 0; /* Adjust padding from right */
-    background-color: rgb(255 0 0 / 80%); /* Semi-transparent red */
     color: white;
-    padding: 20px 30px; /* Adjust padding */
+    padding: 15px 25px; /* Adjust padding */
     z-index: 2;
     text-align: left; /* Ensure left alignment of text */
-    max-width: 40%; /* Adjust as needed */
+    max-width: 50%; /* Adjust as needed */
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    border-radius: 50px 0 0 50px !important;
+    background: rgb(190 0 40 / 85%);
+    font-family: var(--title-font-family);
+    letter-spacing: 0.1172rem;
+}
+
+.aicarousel-wrapper  .aicarousel-slide-content h5, .aicarousel-wrapper  .aicarousel-slide-content p
+{
+    font-family: var(--title-font-family);
+    letter-spacing: 0.1172rem;
+    font-size: 1.7751rem;
+    min-height: 4.12rem;
+    line-height: 1;
+}
+
+.aicarousel-wrapper  .aicarousel-slide-content h5 a, .aicarousel-wrapper  .aicarousel-slide-content p a {
+    color: #fff !important;
+    font-size: 1.24rem;
+    margin: 0;
+    font-family: var(--para-font-family);
+    line-height: 1.49rem;
+    letter-spacing: 0.33px;
 }
 
 .aicarousel-wrapper > .aicarousel.block > .aicarousel-slides-container > .aicarousel-slides > .aicarousel-slide-content h5,
