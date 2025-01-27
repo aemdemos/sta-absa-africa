@@ -17,8 +17,11 @@
   --text-color: #131313;
   --link-color: #3b63fb;
   --link-hover-color: #1d3ecf;
-  --body-font-family: "Sourcesanspro-Regular";
-  --heading-font-family: "Sourcesanspro-Regular";
+  --body-font-family: "Sourcesanspro-Regular", "Sourcesanspro-Regular Fallback", arial, sans-serif;
+  --heading-font-family: "Sourcesanspro-Regular", "Sourcesanspro-Regular Fallback", arial, sans-serif;
+  --title-font-family: "Sourcesanspro-SemiBold", "Sourcesanspro-SemiBold Fallback", arial, sans-serif;
+  --para-font-family: "Sourcesanspro-light", "Sourcesanspro-light Fallback", arial, sans-serif;
+  --footer-font-family: "Sourcesanspro-Extralight", "Sourcesanspro-Extralight Fallback", arial, sans-serif;
   --body-font-size-m: 22px;
   --body-font-size-s: 19px;
   --body-font-size-xs: 17px;
