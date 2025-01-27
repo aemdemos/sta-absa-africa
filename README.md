@@ -1,4 +1,4 @@
-# dfink-absa-africa
+# sta-absa-africa
 This is a project created by the ESaaS Demo Tool. It is based on [https://github.com/adobe/aem-boilerplate](https://github.com/adobe/aem-boilerplate).
 
 ## Environments
